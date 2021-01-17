@@ -5,9 +5,6 @@ import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import { terser } from "rollup-plugin-terser";
 
-// import { uglify } from "rollup-plugin-uglify";
-// import { eslint } from "rollup-plugin-eslint";
-
 const packageJson = require("./package.json");
 
 export default {
@@ -16,12 +13,12 @@ export default {
     {
       file: packageJson.main,
       format: "cjs",
-      sourcemap: true,
+      sourcemap: false,
     },
     {
       file: packageJson.module,
       format: "esm",
-      sourcemap: true,
+      sourcemap: false,
     },
   ],
   external: ["react"],
