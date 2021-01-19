@@ -1,0 +1,40 @@
+@import '../style/index.less';
+
+@oblique-badge-prefix-cls: ~'@{minority-prefix}-oblique-badge';
+
+.@{oblique-badge-prefix-cls} {
+  position: relative;
+  display : inline-block;
+  color   : #ffffff;
+
+  &-content {
+    position: absolute;
+  }
+
+  &-content-topRight {
+    top  : 0;
+    right: 0;
+  }
+
+  &-content-topLeft {
+    top : 0;
+    left: 0;
+  }
+
+  &-content-bottomRight {
+    bottom: 0;
+    right : 0;
+  }
+
+  &-content-bottomLeft {
+    bottom: 0;
+    left  : 0;
+  }
+
+
+  &-text {
+    position : absolute;
+    font-size: 16px;
+  }
+
+}
